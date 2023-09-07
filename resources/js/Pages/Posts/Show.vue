@@ -28,7 +28,7 @@
                         <div class="flex items-center">
                             <p class="inline-flex items-center text-sm mr-3 text-gray-900 dark:text-white gap-5">
                                 <Avatar :src="comment.user.avatar"></Avatar>
-                                {{ comment.user.full_name }}
+                                <Link class=" text-gray-100 font-bold" :href="comment.user.profile_url">{{ comment.user.full_name }}</Link>
                             </p>
                         </div>
                     </footer>
